@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\AboutController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,5 +18,4 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/about', [AboutController::class, 'index']);
+Rou

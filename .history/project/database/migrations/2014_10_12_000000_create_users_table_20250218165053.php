@@ -21,8 +21,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->enum('role', ['admin', 'student'])->default('student'); 
 
+            Schema::table('users', function (Blueprint $table) {
+                $table->enum('role', ['admin', 'etudiant'])->default('etudiant'); // Add the role column
+            });
         });
     }
 
